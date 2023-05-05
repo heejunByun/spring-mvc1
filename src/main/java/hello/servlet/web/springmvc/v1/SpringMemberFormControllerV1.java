@@ -5,6 +5,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
 @Controller
+@RequestMap
 public class SpringMemberFormControllerV1 {
 
     @RequestMapping("/springmvc/v1/members/new-form")

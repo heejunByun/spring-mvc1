@@ -1,0 +1,19 @@
+코딩테스트 봐야할 코드 (1단계)
+    1. Date Calendar
+    2. Character char
+    3. 오름차순 내림차순
+        HashMap<Integer, Double> map = new HashMap<Integer, Double>();
+        List<Integer> listKeySet = new ArrayList<>(map.keySet());
+        // 오름차순
+        Collections.sort(listKeySet, (val1, val2) ->
+                (map.get(val1).compareTo(map.get(val2))));
+        // 내림차순
+        Collections.sort(listKeySet, (val1, val2) ->
+                (map.get(val2).compareTo(map.get(val1))));
+        int idx = 0;
+        for (Integer key : listKeySet) {
+            System.out.println("key : " + key + " // " + "value : " + map.get(key) );
+        }
+    4. 배열, ArrayList
+    5. for 문
+    6. 최대값 최소값
